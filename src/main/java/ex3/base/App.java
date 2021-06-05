@@ -23,8 +23,17 @@ Modify this program so that instead of prompting for quotes from the user, you c
  their associated attributions and then display all of the quotes using the format in the example. An array of maps
  would be a good choice.
  */
+import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
-        
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("What is the quote?");
+        String quote = in.nextLine();
+
+        System.out.println("Who said it?");
+        String author = in.nextLine();
+
+        System.out.println(author + " says, \"" + quote + "\"");
     }
 }
